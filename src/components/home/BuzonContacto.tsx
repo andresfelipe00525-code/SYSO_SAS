@@ -44,12 +44,12 @@ const BuzonContacto: React.FC = () => {
 					</div>
 					<div className="space-y-4 text-sm opacity-90">
 						<p className="flex items-center gap-3">
-							📞 3112377799 / 3132720231
+							📞 3112177779 / 3123720231
 						</p>
 						<p className="flex items-center gap-3">
 							📍 Diag. 30 No. 12-18 Barrio San Luis
 						</p>
-						<p className="flex items-center gap-3">🆔 Nit: 900710249-5</p>
+						<p className="flex items-center gap-3">🆔 Nit: 900.710.269-5</p>
 					</div>
 				</div>
 

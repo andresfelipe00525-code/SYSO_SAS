@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
 							<div className="flex items-start gap-3">
 								<span className="text-lg">📞</span>
 								<p>
-									311 227 7779 / 312 372 0031 / 313 920 3112 <br />{' '}
+									3112177779/ 3123720231 <br />{' '}
 									<span className="text-green-400 font-bold">
 										Tel: 607-8821377
 									</span>
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
 							</div>
 							<div className="flex items-start gap-3">
 								<span className="text-lg">🆔</span>
-								<p>Nit: 900710369-5</p>
+								<p>Nit: 900.710.269-5</p>
 							</div>
 						</div>
 

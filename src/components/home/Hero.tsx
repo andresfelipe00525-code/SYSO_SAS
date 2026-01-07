@@ -6,10 +6,10 @@ const Hero = () => {
 			{/* 1. BARRA DE NAVEGACIÓN */}
 			<nav className="bg-[#1a2e26] text-white relative z-10">
 				<div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-					{/* Espacio izquierdo */}
+					{/* Espacio izquierdo para equilibrar el logo flotante */}
 					<div className="w-32 md:w-40"></div>
 
-					{/* ENLACES CENTRALES (Ya borré el "Contacto" de aquí para que no se repita) */}
+					{/* ENLACES CENTRALES */}
 					<div className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
 						<a href="#" className="hover:text-green-300 transition-colors">
 							Inicio
@@ -34,7 +34,7 @@ const Hero = () => {
 						</a>
 					</div>
 
-					{/* BOTÓN CONTACTO (Este es el que dejamos, el que tiene estilo de botón) */}
+					{/* BOTÓN CONTACTO */}
 					<a
 						href="#contacto"
 						className="hidden md:block border border-white/40 px-6 py-2 rounded-full text-xs font-semibold hover:bg-white hover:text-[#1a2e26] transition-all cursor-pointer"
@@ -44,12 +44,19 @@ const Hero = () => {
 				</div>
 			</nav>
 
-			{/* 2. LOGO FLOTANTE */}
+			{/* 2. LOGO FLOTANTE (Efecto Apple Médico) */}
 			<div className="absolute top-4 left-6 md:left-12 z-20">
 				<img
 					src="/logo.png"
 					alt="Syso Sarare Logo"
-					className="h-28 md:h-40 w-auto drop-shadow-2xl filter brightness-110"
+					className="h-24 md:h-32 w-auto transition-all duration-500 ease-in-out
+                               filter drop-shadow-2xl brightness-110 contrast-105
+                               mix-blend-multiply hover:scale-105"
+					style={{
+						maskImage: 'radial-gradient(circle, black 75%, transparent 100%)',
+						WebkitMaskImage:
+							'radial-gradient(circle, black 75%, transparent 100%)',
+					}}
 				/>
 			</div>
 
@@ -75,6 +82,7 @@ const Hero = () => {
 						alt="Equipo Médico"
 						className="w-full max-w-lg object-contain relative z-10 drop-shadow-lg"
 					/>
+					{/* Círculo de fondo decorativo */}
 					<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-green-50/50 rounded-full blur-3xl -z-10"></div>
 				</div>
 			</div>
