@@ -1,0 +1,99 @@
+/* --- ESTILOS DEL NAVBAR --- */
+.navbar {
+	background-color: #1a3c34; /* Verde oscuro institucional */
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	max-width: 1200px;
+}
+
+.logo-img {
+	height: 60px;
+	width: auto;
+}
+
+.nav-menu {
+	display: flex;
+	list-style: none;
+	gap: 25px;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-link {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 500;
+	transition: color 0.3s;
+}
+
+.nav-link:hover {
+	color: #a8cfbb; /* Un verde más claro al pasar el mouse */
+}
+
+.btn-nav-contacto {
+	border: 1px solid white;
+	padding: 8px 25px;
+	border-radius: 20px;
+	color: white;
+	text-decoration: none;
+	transition: 0.3s;
+	font-weight: 600;
+}
+
+.btn-nav-contacto:hover {
+	background: white;
+	color: #1a3c34;
+}
+
+/* MENÚ MÓVIL (Por defecto oculto en PC) */
+.menu-icon {
+	display: none;
+	background: none;
+	border: none;
+	color: white;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+/* --- RESPONSIVE (Celulares y Tablets) --- */
+@media (max-width: 960px) {
+	.menu-icon {
+		display: block; /* Aparece el botón hamburguesa */
+	}
+
+	.nav-menu {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 80px; /* Altura del navbar */
+		left: -100%; /* Oculto a la izquierda */
+		width: 100%;
+		background-color: #1a3c34;
+		padding: 20px 0;
+		transition: all 0.5s ease;
+		text-align: center;
+	}
+
+	.nav-menu.active {
+		left: 0; /* Entra a la pantalla */
+	}
+
+	.nav-item {
+		margin: 15px 0;
+	}
+}
