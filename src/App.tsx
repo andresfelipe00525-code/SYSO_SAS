@@ -2,14 +2,10 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import axios from 'axios';
 import './App.css';
-
-// Componentes
 import Hero from './components/home/Hero';
 import ServiciosSection from './components/home/ServiciosSection';
 import BuzonContacto from './components/home/BuzonContacto';
 import Conocenos from './section/Conocenos';
-
-// 👇 IMPORTAMOS EL ARCHIVO DE HORARIOS CORREGIDO
 import HorarioDeAtencion from './components/home/Horarioatencion';
 
 // Configuración de API
