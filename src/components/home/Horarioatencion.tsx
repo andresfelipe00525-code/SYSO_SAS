@@ -31,7 +31,7 @@ const HorarioDeAtencion = () => {
 							Lunes a Viernes
 						</h3>
 						<p className="text-gray-500 font-medium text-lg">
-							7:00 am - 6:00 pm
+							7:00 am - 12:00 pm y de 2:00pm a 5:30 pm
 						</p>
 						<div className="mt-4 flex items-center gap-2 text-sm text-green-700 bg-green-50 py-1 px-3 rounded-lg w-fit">
 							<span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
@@ -46,7 +46,7 @@ const HorarioDeAtencion = () => {
 						</div>
 						<h3 className="text-xl font-bold text-[#1a2e26] mb-2">Sábados</h3>
 						<p className="text-gray-500 font-medium text-lg">
-							7:00 am - 12:00 m
+							7:00 am - 12:00 pm
 						</p>
 						<div className="mt-4 text-sm text-blue-700 bg-blue-50 py-1 px-3 rounded-lg w-fit">
 							Media Jornada
